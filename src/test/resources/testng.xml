@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Tests" verbose="5">
+  <test name="Mobile test suit" enabled="true">
+    <groups>
+      <run>
+        <include name = "smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.CurrentArticleTests"/>
+    </classes>
+  </test>
+
+  <test name="anothere test " enabled="false">
+    <groups>
+      <run>
+        <include name = "smoke"/>
+        <exclude name = "regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.CurrentArticleTests"/>
+    </classes>
+  </test>
+
+</suite>
